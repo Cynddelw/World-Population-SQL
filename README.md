@@ -20,7 +20,7 @@ Q: What years are covered by the dataset?
 
 Q: What is the largest population size for Gabon in this dataset?
 
-SELECT population
+>SELECT population
    ...> FROM population_years
    ...> WHERE country ='Gabon'
    ...> ORDER BY population DESC;
@@ -38,7 +38,7 @@ SELECT population
 
 Q: What were the 10 lowest population countries in 2005?
 
-SELECT country, population
+>SELECT country, population
    ...> FROM population_years
    ...> WHERE year = 2005
    ...> ORDER BY population ASC
@@ -56,7 +56,7 @@ Gibraltar|0.02846
 
 Q: What are all the distinct countries with a population of over 100 million in the year 2010?
 
- SELECT country
+ >SELECT country
    ...> FROM population_years
    ...> WHERE population > 100 AND year = 2010
    ...> ORDER BY population DESC;
@@ -74,7 +74,7 @@ Mexico
 
 Q: How many countries in this dataset have the word “Islands” in their name?
 
-SELECT DISTINCT country
+>SELECT DISTINCT country
    ...> FROM population_years
    ...> WHERE country LIKE '%islands%';
 Cayman Islands
@@ -89,7 +89,7 @@ U.S. Pacific Islands
 
 Q: What is the difference in population between 2000 and 2010 in Indonesia? (28.29173)
 
-SELECT population
+>SELECT population
    ...> FROM population_years
    ...> WHERE country = 'Indonesia'
    ...> ORDER BY population DESC;
